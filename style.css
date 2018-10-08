@@ -1,0 +1,1010 @@
+/*
+Theme Name: BFGcon
+Theme URI: http://www.bfgcon.com/
+Description: Customized version of Mondree for BFGcon
+Author: Eli White
+Author URI: http://eliw.com/
+Template: mondree
+Version: 1.0.0
+License: Copyright One for All Events
+Text Domain: mondree
+*/
+
+.conference__video img {
+    width: auto;
+    height: 290px;
+    margin: 20px auto 10px;
+}
+.conference > div:first-child {
+    border-right: none !important;
+}
+.conference footer a {
+    border-radius: 1em;
+}
+.conference .conference__text h2 {
+    font-variant: small-caps;
+    font-weight: bold;
+    color: #7f3b8e;
+   text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+.conference__text p, .conference__text footer time, .conference__text footer span {
+/*    text-shadow: 1px 1px 0px #333;*/
+    color: white !important;
+}
+.countdown-section .countdown-section__title, .countdown-section .countdown-section__text {
+    display: none;
+}
+.countdown-section + div.columns.html-text {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.countdown-section .countdown-section__elems .countdown-section__items {
+    text-align: center;
+    height: auto;
+}
+div.columns + div.contact-us {
+    padding-top: 2em;
+}
+@media screen and (min-width: 1420px) {
+    .countdown-section .countdown-section__elems {
+        width: 100%;
+        margin-left: 20%;
+    }
+    .countdown-section .countdown-section__items {
+        width: 15%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .countdown-section .countdown-section__elems {
+        width: 75%;
+        margin-left: 12.5%;
+    }
+    .countdown-section .countdown-section__items {
+        width: 25%;
+    }
+}
+@media screen and (max-width: 1023px) {
+    #wrapper {
+        background: white;
+        padding-bottom: 0.5em;
+        display: none;
+    }
+    .conference .conference__video img {
+        height: 135px;
+    }
+    .conference .conference__video {
+        position: absolute;
+        background: none;
+        width: auto;
+        top: 0;
+        right: 60px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .conference .conference__video img {
+        height: 180px;
+    }
+    .countdown-section__elems .countdown-section__items {
+        padding-bottom: 0;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 574px) {
+    .conference .conference__video {
+        position: relative;
+        background: #38addb;
+        width: 100%;
+        right: 0;
+        top: -1px;
+    }
+}
+.columns p {
+    color: #332e2b;
+}
+.contact-us header {
+    background-color: #5a5a5a !important;
+    background: #5a5a5a !important;
+/*
+    margin-top: 2em;
+    padding-top: 3em;
+*/
+}
+#scroller #menu-primary li a {
+    height: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    font-size: 16px;
+}
+#scroller #menu-primary li {
+    margin-top: 10px;
+}
+#scroller li, #scroller li a {
+    border-radius: 30px;
+}
+#scroller li a:hover, #scroller li.btn-register a {
+    color: white;
+    transition: color 100ms ease-in-out 100ms;
+}
+@media screen and (max-width: 1023px) {
+    #scroller #menu-primary li a {
+        height: 40px;
+        line-height: 40px;
+    }
+    #scroller li, #scroller li a {
+        border-radius: 20px;
+        color: white !important;
+    }
+    #scroller #menu-primary li {
+        margin: 5px 5px;
+    }
+    #scroller li a:hover, #scroller li.btn-register a {
+        color: #7f3b8e;
+    }
+}
+
+header.site__header {
+    border-bottom: 0.5px solid #333;
+}
+.site__content .content__row.heading:not(.strapline) {
+    padding: 50px 10px 30px;
+}
+.site__content .content__row.heading span {
+    color: black;
+}
+.site__content .content__row.grey h1 {
+    color: white;
+}
+
+/* General Content Area */
+.columns p {
+    padding-bottom: 1em;
+    font-weight: normal;
+}
+.columns.html-text h3, .columns h3 {
+    font-size: 27px;
+    line-height: 28px;
+    color: #a3a3a3;
+    margin: 0.5em 0;
+    font-weight: bold;
+}
+.columns button {
+    display: block;
+    margin: 1em auto;
+    background: #56b253;
+    color: white;
+    border-radius: 1.4em;
+    border: none;
+    padding: .7em 2em;
+    font-size: 24px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+.columns button:hover {
+    background: #38addb; 
+}
+.columns ul li {
+    margin-left: 1em;
+    font-size: 80%;
+    color: #333;
+}
+.columns ul li ul {
+    margin-left: 1em;
+}
+.columns ul {
+    margin-bottom: 1em;
+}
+.columns ul > li {
+    font-weight: bold;
+    color: #666;
+}
+.columns li > ul > li {
+    font-weight: normal;
+    color: black;
+}
+.columns blockquote, .columns blockquote p {
+    color: #666;
+    font-style: italic;
+    padding: 0;
+    font-size: 95%;
+}
+.columns blockquote {
+    border-left: 3px solid #CCC;
+    padding: 0 0 0 1em;
+    margin-bottom: 2em;
+}
+.columns.row .col.col-md-6, .columns.row .col.col-md-4, .columns.row.html-text {
+    padding: 20px 42px;
+}
+.columns h3 > img {
+    padding: 0.5em 0; 
+}
+.col > h3:first-child, .html-text > h3:first-child {
+    padding-top: 0;
+    margin-top: 0;
+}
+.col > p:last-child, .html-text > p:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+/* Mailing List */
+#mlist {
+}
+div.mc4wp-form-fields {
+    position: relative;
+}
+#mlist div.mc4wp-response p {
+    color: white;
+}
+div.countdown-section + div.html-text + div.html-text { /* Only way to target the form div */
+    background-color: #38addb;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+#mlist h2 {
+    font: 100 52px/51px 'Roboto', sans-serif;
+    color: white;
+    margin: 0 0 11px 0;
+}
+#mlist p {
+    font: 100 26px/38px 'Roboto', sans-serif;
+    color: #333;
+    padding: 0;
+}
+#mlist h2 + p {
+    padding-bottom: 6px;
+}
+#mlist form label {
+    display: none;
+}
+#mlist form input[type="text"] {
+    float: left;
+    width: 38%;
+    border: none;
+    padding: 5px 10px 6px;
+    margin: 0 2% 0 0;
+}
+#mlist form input[type="email"] {
+    width: 78%;
+    border: none;
+    padding: 5px 10px 6px;
+}
+#mlist form input[type="submit"] {
+    width: 20%;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    background: #56b253;
+    border: 2px solid white;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    height: 55px;
+}
+@media screen and (max-width: 574px) {
+    #mlist form input[type="submit"] {
+        font-size: 50%;
+    }
+    .menu-show i.fa {
+        font-size: 150%;
+    }
+    .menu-show {
+        top: 22px;
+    }
+    a.logo {
+        top: 10px;
+    }
+}
+.logo img {
+    max-height: 55px;
+}
+.logo {
+    top: 12px;
+}
+div.site__content ul {
+    list-style: square outside;
+    margin-left: 10px;
+}
+div.site__content ul li {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 18px;
+    padding-top: 4px;
+    color: #555;
+}
+.content__row.heading span {
+    color: #333;
+}
+
+/* Timetable Plugin - Making it work for us: */
+.content__row.heading h1 span {
+    font-weight: bold;
+}
+/* Apologies for super long descriptors, but it's either this, or !important to get it to override */
+.site .mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .event-title {
+    font-size: 0.85em;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.site .mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .timeslot {
+    font-size: 0.7em;
+    line-height: 0.95;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.site .mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .event-subtitle {
+    font-size: 0.6em;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.site .mptt-shortcode-wrapper .mptt-shortcode-table thead tr.mptt-shortcode-row th:not([data-column-id='']) {
+    font-size: 0.9em;
+    /* width: 999px; */
+    width: 12.5%;
+    padding: .25em;
+    vertical-align: middle;
+}
+
+@media (max-width: 1200px) {
+    .site .mptt-shortcode-wrapper .mptt-shortcode-table
+                tbody .mptt-event-container .event-title {
+        font-size: 0.8em;
+    }
+    .site .mptt-shortcode-wrapper .mptt-shortcode-table 
+                tbody .mptt-event-container .timeslot {
+        font-size: 0.6em;
+    }
+    .site .mptt-shortcode-wrapper .mptt-shortcode-table 
+                tbody .mptt-event-container .event-subtitle {
+        font-size: 0.55em;
+    }
+    .site .mptt-shortcode-wrapper .mptt-shortcode-table 
+                tbody td.mptt-shortcode-hours {
+        font-size: 0.8em;
+        padding: 0 0.3em !important;
+        text-align: right;
+    }
+    .site .mptt-shortcode-wrapper .mptt-shortcode-table 
+                thead tr.mptt-shortcode-row th:not([data-column-id='']) {
+        font-size: 0.9em;
+        line-height: 1.2;
+    }
+    div.columns.html-text.row.clearfix {
+        padding: 20px 21px;
+    }
+    .site .site__header {
+        position: absolute;
+    }
+
+    body .site {
+        overflow: visible;
+    }
+    .page-id-233 div.heading.strapline {
+        position: sticky;
+        z-index: 50;
+        top: 0;
+    }
+    .page-id-233 thead tr th {
+        position: sticky;
+        top: 65px;
+        z-index: 48;
+    }
+}
+
+@media (max-width: 1000px) {
+    .site .mptt-shortcode-wrapper .mptt-shortcode-table
+                tbody .mptt-event-container .event-title {
+        font-size: 0.65em;
+    }
+    .site .mptt-shortcode-wrapper .mptt-shortcode-table 
+                tbody .mptt-event-container .timeslot {
+        font-size: 0.45em;
+        margin-bottom: 2px;
+    }
+    .site .mptt-shortcode-wrapper .mptt-shortcode-table 
+                tbody .mptt-event-container .event-subtitle {
+        font-size: 0.5em;
+        line-height: 1.1;
+    }
+    .site .mptt-shortcode-wrapper .mptt-shortcode-table 
+                tbody td.mptt-shortcode-hours {
+        font-size: 0.65em;
+    }
+    .site .mptt-shortcode-wrapper .mptt-shortcode-table 
+                thead tr.mptt-shortcode-row th:not([data-column-id='']) {
+        font-size: 0.65em;
+    }
+    div.columns.html-text.row.clearfix {
+        padding: 20px 21px;
+    }
+}
+
+/*The event page you get when clicking through the timetable */
+#bfg-mp-event .tt-back {
+    float: right;
+    font-size: 0.4em;
+    font-weight: bold;
+}
+#bfg-mp-event .tt-back a {
+    color: white;
+}
+#bfg-mp-event .content__row p {
+    color: #332e2b;
+}
+#bfg-mp-event .content__row img {
+    width: auto;
+}
+#bfg-mp-event .content__row img.aligncenter {
+    margin: 0 auto;
+}
+#bfg-mp-event p.timeslot .timeslot-column {
+    border-top: 1px solid #a3a3a3;
+    width: 100%;
+    display: inline-block;
+}
+#bfg-mp-event p.timeslot .timeslot-start, #bfg-mp-event p.timeslot .timeslot-end  {
+    font-size: 0.9em;
+}
+#bfg-mp-event p.timeslot .timeslot-subtitle {
+    color: #a3a3a3;
+    font-style: italic;
+    font-size: 0.9em;
+}
+#bfg-mp-event p.timeslot .timeslot-description {
+    color: #5f5d5a;
+}
+/* Hack to make Open Gaming look nicer: */
+#bfgcon-day2 tbody .mptt-shortcode-row-1 .mptt-shortcode-hours,
+#bfgcon-day3 tbody .mptt-shortcode-row-1 .mptt-shortcode-hours {
+    font-size: 1px;
+    letter-spacing: -1px;
+    color: transparent;
+    text-align: center;
+}
+#bfgcon-day2 tbody .mptt-shortcode-row-1 .mptt-shortcode-hours:before, 
+#bfgcon-day3 tbody .mptt-shortcode-row-1 .mptt-shortcode-hours:before {
+    content: "⇣";
+    font-size: 20px;
+    color: rgb(163, 163, 163);
+    font-weight: bold;
+}
+#bfgcon-day2 tbody .mptt-shortcode-row-2,
+#bfgcon-day2 tbody .mptt-shortcode-row-3,
+#bfgcon-day2 tbody .mptt-shortcode-row-4,
+#bfgcon-day2 tbody .mptt-shortcode-row-5,
+#bfgcon-day2 tbody .mptt-shortcode-row-6,
+#bfgcon-day2 tbody .mptt-shortcode-row-7,
+#bfgcon-day2 tbody .mptt-shortcode-row-8,
+#bfgcon-day2 tbody .mptt-shortcode-row-9,
+#bfgcon-day2 tbody .mptt-shortcode-row-10,
+#bfgcon-day2 tbody .mptt-shortcode-row-11,
+#bfgcon-day2 tbody .mptt-shortcode-row-12,
+#bfgcon-day2 tbody .mptt-shortcode-row-13,
+#bfgcon-day2 tbody .mptt-shortcode-row-14,
+#bfgcon-day2 tbody .mptt-shortcode-row-15,
+#bfgcon-day3 tbody .mptt-shortcode-row-2,
+#bfgcon-day3 tbody .mptt-shortcode-row-3,
+#bfgcon-day3 tbody .mptt-shortcode-row-4,
+#bfgcon-day3 tbody .mptt-shortcode-row-5,
+#bfgcon-day3 tbody .mptt-shortcode-row-6,
+#bfgcon-day3 tbody .mptt-shortcode-row-7,
+#bfgcon-day3 tbody .mptt-shortcode-row-8,
+#bfgcon-day3 tbody .mptt-shortcode-row-9,
+#bfgcon-day3 tbody .mptt-shortcode-row-10,
+#bfgcon-day3 tbody .mptt-shortcode-row-11,
+#bfgcon-day3 tbody .mptt-shortcode-row-12,
+#bfgcon-day3 tbody .mptt-shortcode-row-13,
+#bfgcon-day3 tbody .mptt-shortcode-row-14,
+#bfgcon-day3 tbody .mptt-shortcode-row-15
+{
+    display: none;
+}
+#bfgcon-day2 tbody .mptt-shortcode-row-0 .mptt-shortcode-hours + .mptt-shortcode-event,
+#bfgcon-day3 tbody .mptt-shortcode-row-0 .mptt-shortcode-hours + .mptt-shortcode-event {
+/*    height: calc(100% - 420px) !important;*/
+}
+#bfgcon-day2 tbody .mptt-shortcode-row-0 .mptt-shortcode-hours + .mptt-shortcode-event .timeslot,
+#bfgcon-day3 tbody .mptt-shortcode-row-0 .mptt-shortcode-hours + .mptt-shortcode-event .timeslot {
+    display: none;
+}
+div.mptt-shortcode-wrapper {
+    margin-top: -1em;
+    margin-bottom: 2em;
+}
+
+/* Fix the list display: */
+li[data-event-id="open-gaming-late"] .timeslot-end {
+    display: none;
+}
+li[data-event-id="open-gaming-late"] .timeslot-delimiter:after {
+    content: "8:00 am";
+}
+li.mptt-list-event .event-subtitle {
+    margin: .25rem 0 0;
+    padding: 0;
+    font-style: italic;
+    font-size: 80%;
+}
+
+/* Updates for CampTix */
+p.tix-submit {
+}
+
+p.tix-submit select.tix_payment_method {
+}
+
+div.registration__wrap {
+    margin: 0 auto;
+}
+#tix {
+    color: #333;
+}
+#tix h3 {
+    text-align: center;
+}
+#tix input[type="submit"], #tix button[type="submit"] {
+    width: auto;
+    padding: 0 15px;
+    display: inline-block;
+    height: 70px;
+    /*
+    background: transparent;
+    border: 2px solid #c4c2bf;
+    color: #2c2c2c;
+    font-family: 'Dosis', sans-serif;
+    */
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 10px 0 30px;
+    transition: border-color 300ms ease-in-out;
+    outline: none;
+    font-weight: 400;
+    line-height: 1.428
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    float: none !important;
+    color: white;
+    background: #56b253; /* BFGcon Green */
+    border: none;
+    border-radius: 30px;
+}
+#tix form {
+    text-align: center;
+}
+#tix input[type="submit"]:hover, #tix button[type="submit"]:hover {
+    background: rgb(47, 172, 221);
+}
+.tix-column-remaining {
+    display: none;
+}
+#tix select {
+    -webkit-appearance: none;
+    background: transparent;
+    background-image: none;
+    box-shadow: none;
+    border: 1px solid #2c2c2c;
+    border-radius: none;
+    font-size: 18px;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 5px 9px;
+}
+table.tix_tickets_table, table.tix-ticket-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    line-height: 1.2;
+    margin: 0 auto;
+}
+table.tix-ticket-form tr td:last-child a {
+    display: none;
+}
+table.tix_tickets_table tr:nth-child(even) {
+    background-color: rgba(82, 179, 78, 0.05); /* BFGcon Green */
+}
+table.tix_tickets_table th, table.tix_tickets_table td, table.tix-ticket-form th, table.tix-ticket-form td {
+    /* color: #787775; */
+    color: #333;
+    padding: 0.7em 1em;
+    width: auto !important;
+    border-bottom: 1px solid #CCC;
+}
+table.tix_tickets_table th, table.tix-ticket-form th {
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    background-color: #38addb; /* BFGcon Blue */
+    color: white;
+    border-bottom: 1px solid white;
+    position: relative;
+    top: -1px;
+}
+table.tix_tickets_table tbody tr td:first-child, table.tix-ticket-form tbody tr td:first-child {
+    text-align: left;
+}
+span.tix-ticket-excerpt {
+    font-size: 14px;
+}
+table.tix_tickets_table input[type="text"], table.tix_tickets_table input[type="email"] {
+    width: 100%;
+    font-size: 14px;
+    -webkit-appearance: none;
+    border: 1px solid #2c2c2c;
+    padding: 3px 5px;
+}
+#tix-coupon-input {
+    width: auto;
+}
+#tix-coupon-container input[type="submit"] {
+    font-size: 16px;
+    height: 30px;
+    margin: 10px;
+}
+#tix #tix-pm-stripe {
+    width: 290px;
+    margin: 10px 0;
+    position: relative;
+    top: -45px;
+    line-height: 68px;
+    overflow: hidden;
+}
+#tix #tix-pm-stripe:before {
+    content: "Pay with Credit Card ";
+}
+#tix #tix-pm-paypal {
+    width: 290px;
+    margin: 10px 0;
+    position: relative;
+    top: 85px;
+    font-size: 14px;
+    text-transform: none;
+    height: 30px;
+    width: 200px;
+    border: 1px solid #AAA;
+}
+#tix #tix-pm-paypal:before {
+    content: "Or ";
+}
+p.tix-submit {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+#tix tr.tix-ticket-308, #tix tr.tix-ticket-307, #tix tr.tix-ticket-546 {
+    border-top: 25px solid #56b253; /* BFGcon Green */
+}
+#tix tr.tix-ticket-308 td:first-child, #tix tr.tix-ticket-307 td:first-child, #tix tr.tix-ticket-546 td:first-child {
+    position: relative;
+}
+#tix tr.tix-ticket-308 td:first-child:before, #tix tr.tix-ticket-307 td:first-child:before, #tix tr.tix-ticket-546 td:first-child:before {
+    content:"";
+    display: block;
+    position: absolute;
+    top: -21px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100vw; /* Ensure it doesn't wrap */
+}
+#tix tr.tix-ticket-308 td:first-child:before {
+    content: "Tickets that include a T-shirt";
+}
+#tix tr.tix-ticket-307 td:first-child:before {
+    content: "Tickets without shirts";
+}
+#tix tr.tix-ticket-546 td:first-child:before {
+    content: "Just a T-shirt";
+}
+#tix h2, #tix h3 {
+    color: #333;
+}
+#tix table {
+    min-width: 400px;
+}
+body.admin-bar div.columns #tix {
+    padding-top: 0;
+}
+.tix_tickets_table:not(.tix-order-summary) td.tix-column-quantity {
+    border-right: 1px solid #CCC;
+}
+/* Help Mobile Out */
+@media screen and (max-width: 574px) {
+    #tix table {
+        min-width: unset;
+        max-width: 95vw;
+    }
+    .site__content .columns.row .col, .site__content .columns.row.html-text {
+        padding: 10px 5px;
+    }
+    .site__content .columns.html-text h2 {
+        font-size: 24px;
+    }
+    #tix table.tix_tickets_table th.tix-column-description {
+        text-align: left;
+    }
+    .site__content table.tix_tickets_table.tix-order-summary th.tix-column-price {}
+    .site__content table.tix_tickets_table.tix-order-summary th.tix-column-per-ticket,
+    .site__content table.tix_tickets_table.tix-order-summary th.tix-column-quantity {
+        text-indent: -9999px;
+        line-height: 0;
+    }
+    .site__content table.tix_tickets_table.tix-order-summary th.tix-column-per-ticket:after,
+    .site__content table.tix_tickets_table.tix-order-summary th.tix-column-quantity:after {
+        text-indent: 0;
+        display: block;
+    }
+    .site__content table.tix_tickets_table.tix-order-summary th.tix-column-per-ticket:after {
+        content: "Per";
+    }
+    .site__content table.tix_tickets_table.tix-order-summary th.tix-column-quantity:after {
+        content: "Qty";
+    }
+    #tix table.tix_tickets_table th, #tix table.tix_tickets_table td {
+        padding: 0.4em 0.6em;
+    }
+    .site__content table.tix_tickets_table.tix-order-summary td.tix-column-price,
+    .site__content table.tix_tickets_table.tix-order-summary td.tix-column-per-ticket,
+    .site__content table.tix_tickets_table.tix-order-summary td.tix-column-quantity {
+        font-size: 90%;
+    }
+}
+@media screen and (max-width: 320px) {
+    #tix table.tix_tickets_table.tix-order-summary th.tix-column-description {
+        text-indent: -9999px;
+        line-height: 0;
+    }
+    .site__content table.tix_tickets_table.tix-order-summary th.tix-column-description:after {
+        content: "Desc";
+        text-indent: 0;
+        display: block;
+    }
+    #tix table th, #tix table td {
+        font-size: 90%;
+    }
+    /* Add some genericstuff in here: */
+    .site__content .content__row.heading:not(.strapline)  {
+        padding: 25px 10px 5px;
+    }
+    .site__content .heading div.content__item {
+        padding: 0;
+    }
+    .site__content .heading div.content__item h1 {
+        font-size: 60%;
+    }
+}
+
+/* PTW & Vendors */
+#playtowin {
+    border-collapse: separate;
+    border-spacing: 10px 20px;
+    font-size: 90%;
+}
+#playtowin th:nth-child(1), #playtowin th:nth-child(2) {
+    border-bottom: 1px solid #333;
+}
+#playtowin img {
+    height: auto;
+    width: auto;
+    display: inline-block;
+    max-height: 30px;
+}
+#playtowin td {
+    height: 35px;
+    vertical-align: middle;
+}
+#playtowin tbody tr td:nth-child(3) {
+    text-align: center;
+    border-left: 1px solid #333;
+    padding-left: 10px;
+}
+#playtowin + p {
+    padding-top: 2em;
+    font-size: 70%;
+    color: #333;
+}
+
+/* Vendors - Making some of this generic: */
+.site__content .html-text img {
+    height: auto;
+    width: auto;
+    display: inline-block;
+}
+.vendor_block h3 {
+    border-top: 5px solid #666461;
+    padding-top: 1em;
+}
+.vendor_block h3 a {
+    text-decoration: none;
+}
+.vendor_block h3 img {
+    float: right;
+    padding: 0;
+    margin: 0 0.5em 1em 2em;
+}
+
+
+html .page .columns .col h4 {
+    color: #666;
+    border-bottom: 1px solid #333;
+}
+div.content__row.heading h1 {
+    color: white;
+    font-weight: 400;
+}
+.page .columns .col img {
+    width: auto;
+    display: inline-block;
+}
+.page .columns .col img.alignright {
+    float: right;
+    margin: 0.5em 1em 0.5em 0;
+}
+
+/* Random stuff */
+/* event pages straplines */
+.site__content .heading.strapline.content__row .content__item {
+    padding: 0;
+}
+.site__content .heading.strapline.content__row .content__item h1 span {
+    font-weight: normal;
+    color: white;
+    margin: 0;
+}
+
+/* Fix the social 'things' on the homepage */
+div.social.full-width {
+    text-align: center;
+}
+div.social.full-width .social__item {
+    float: none;
+    display: inline-block;
+    width: 100px !important;
+    height: 100px !important;
+    padding-bottom: 0 !important;
+    font-size: 48px;
+}
+.social__item_in {
+    display: none !important;
+}
+.site__content .columns.html-text h3 {
+    color: black;
+}
+
+/* Game Library */
+#gameLibrary {
+    display: block;
+    -webkit-columns: 400px 2; /* Chrome, Safari, Opera */
+    -moz-columns: 400px 2; /* Firefox */
+    columns: 400px 2;
+    list-style: none;
+}
+#gameLibrary li {
+    display: BLOCK;
+    position: relative;
+    height: 85px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: middle;
+    padding: 5px 0 5px 10px;
+}
+#gameLibrary li > a:first-child {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100% - 200px);
+    color: blue;
+}
+#gameLibrary li:nth-child(even) {
+    background-color: #EFEFEF;
+}
+#gameLibrary span.bgg_annotation {
+    display: none;
+}
+#gameLibrary span.bgg_score {
+  display: block;
+  right: 125px;
+  top: 13.5px;
+  position: absolute;
+  width: 50px; 
+  height: 28.87px;
+  background-color: #38addb;
+  margin: 14.43px 0;
+  text-align: center;
+  font-size: 28px;
+  line-height: 28.87px;
+}
+#gameLibrary span.bgg_score a {
+    padding: 10px 4px; /* Make the link as big as the hex */
+    z-index: 2; /* Make it on top */
+    position: relative;
+}
+#gameLibrary span.bgg_score:hover {
+    background-color: #56b253;
+}
+#gameLibrary span.bgg_score:hover:before, #gameLibrary span.bgg_score:hover:after {
+    border-bottom-color: #56b253;
+    border-top-color: #56b253;
+}    
+#gameLibrary span.bgg_score a:hover:before {
+    content: "BGG Score";
+    position: absolute;
+    font-size: 14px;
+    top: -13px;
+    text-align: center;
+    width: 80px;
+    left: -15px;
+    background: #38addb;
+    height: 16px;
+    line-height: 16px;
+    z-index: 4;
+    box-shadow: 2px 2px 2px 0 #666;
+}
+#gameLibrary span.bgg_score a:link, #gameLibrary span.bgg_score a:visited {
+    color: white;
+}
+#gameLibrary span.bgg_score:before,
+#gameLibrary span.bgg_score:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+}
+
+#gameLibrary span.bgg_score:before {
+  bottom: 100%;
+  border-bottom: 14.43px solid #38addb;
+}
+
+#gameLibrary span.bgg_score:after {
+  top: 100%;
+  width: 0;
+  border-top: 14.43px solid #38addb;
+}
+#gameLibrary img {
+    position: absolute;
+    right: 25px;
+    object-fit: contain;
+    height: 75px;
+    width: 75px;
+}
+
+/* Custom Event con-scheduler */
+#bfg-event dl {
+}
+#bfg-event dt {
+    color: black;
+    float: left;
+    text-align: right;
+    width: 30%;
+    padding-right: 0.8em;
+}
+#bfg-event dd {
+}
+
+#bfg-event ul.ecs-attendees {
+    list-style: none;
+}
+#bfg-event ul.ecs-attendees img {
+    vertical-align: middle;
+}
+#bfg-event ul.ecs-attendees li {
+    display: inline-block;
+    border: 1.5px solid green;
+    border-radius: 8px;
+    padding: 0 5px 0 0;
+    overflow: hidden;
+}
